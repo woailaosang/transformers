@@ -961,7 +961,7 @@ class BartForConditionalGeneration(PretrainedBartModel):
             "encoder_outputs": encoder_outputs,
             "decoder_cached_states": decoder_cached_states,
             "decoder_input_ids": decoder_input_ids,
-            "attention_mask": attention_mask
+            "attention_mask": attention_mask,
         }
 
     def prepare_scores_for_generation(self, scores, cur_len, max_length):
